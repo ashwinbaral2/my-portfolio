@@ -16,8 +16,8 @@
   function setTheme(isDark) {
     document.documentElement.classList.toggle("dark", isDark);
     localStorage.setItem("theme", isDark ? "dark" : "light");
-    sunIcon.style.display = isDark ? "block" : "none";
-    moonIcon.style.display = isDark ? "none" : "block";
+    moonIcon.style.display = isDark ? "block" : "none";
+    sunIcon.style.display = isDark ? "none" : "block";
   }
 
   // Initialize theme
@@ -171,7 +171,7 @@
       'Full Stack Developer',
       'UI Enthusiast',
       'MERN Stack Developer',
-      'Geology & GIS Enthusiast',
+      'Geospatial Data Analyst',
     ];
 
     const typingSpeed = 70; // ms per character (adjustable)

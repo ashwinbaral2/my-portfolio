@@ -138,10 +138,7 @@ input, textarea {
   50% { transform: translateY(-10px); }
 }
 
-@keyframes orbit {
-  0% { transform: rotate(0deg) translateX(200px) rotate(0deg); }
-  100% { transform: rotate(360deg) translateX(200px) rotate(-360deg); }
-}
+
 
 @keyframes glowPulse {
   0%, 100% { box-shadow: 0 0 5px var(--glow), 0 0 10px var(--glow); }
@@ -493,29 +490,7 @@ input, textarea {
 #sunIcon{display:none}
 #closeIcon{display:none}
 
-/* Orbit icon animation moved from inline to CSS classes */
-.orbit-icon{position:absolute;left:50%;top:50%;animation-name:orbit;animation-timing-function:linear;animation-iteration-count:infinite}
-.o-d8{animation-duration:8s}
-.o-d10{animation-duration:10s}
-.o-d12{animation-duration:12s}
-.o-d14{animation-duration:14s}
-.o-d16{animation-duration:16s}
-.o-d18{animation-duration:18s}
-.o-d0{animation-delay:0s}
-.o-d-1_3{animation-delay:-1.3s}
-.o-d-2_6{animation-delay:-2.6s}
-.o-d-3_9{animation-delay:-3.9s}
-.o-d-5_2{animation-delay:-5.2s}
-.o-d-6_5{animation-delay:-6.5s}
-
-/* Orbit span colouring moved from inline to named classes */
-.orbit-svg{display:flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;border-radius:50%;font-size:.625rem;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,0.15)}
-.orbit-svg.react{background-color:#61DAFB20;color:#61DAFB;border:1px solid #61DAFB40}
-.orbit-svg.node{background-color:#8cc84b20;color:#8cc84b;border:1px solid #8cc84b40}
-.orbit-svg.mongo{background-color:#47A24820;color:#47A248;border:1px solid #47A24840}
-.orbit-svg.ts{background-color:#3178C620;color:#3178C6;border:1px solid #3178C640}
-.orbit-svg.nextjs{background-color:#00000020;color:#000;border:1px solid rgba(0,0,0,0.12)}
-.orbit-svg.express{background-color:#E8952C20;color:#E8952C;border:1px solid #E8952C40}
+/* Orbiting icons removed — styles cleaned */
 
 /* ============================================
    HERO SECTION
@@ -652,29 +627,7 @@ input, textarea {
   justify-content: center;
 }
 
-.orbit-container {
-  position: absolute;
-  width: 18rem;
-  height: 18rem;
-}
-
-.orbit-icon {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-}
-
-.orbit-icon span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  font-size: 0.625rem;
-  font-weight: 700;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
+/* Orbit container and icon styles removed (icons moved out) */
 
 .profile-image-wrapper {
   position: relative;
@@ -1532,10 +1485,7 @@ input, textarea {
     height: 18rem;
   }
 
-  .orbit-container {
-    width: 20rem;
-    height: 20rem;
-  }
+  /* orbit container sizing removed for calm hero */
 
   .section-header h2 {
     font-size: 3rem;
