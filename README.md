@@ -47,16 +47,20 @@ My background in Geology and GIS influences how I approach problem solving, visu
 ---
 
 ## 📂 Project Structure
+```bash
 portfolio/
 │
-├── index.html
-├── style.css
-├── script.js
+├── html 
+|   └──> index.html
+├── css
+|   └──> style.css
+├── js 
+|   └──> script.js 
 ├── assets/
-│ ├── images
-│ └── icons
+│ ├──> images
+│ └──> docs
 └── README.md
-
+```
 
 ---
 
@@ -65,7 +69,7 @@ portfolio/
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/ashwinbaral2/my-portfolio.git
 ```
 Open the project:
 ```bash
