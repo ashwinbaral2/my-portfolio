@@ -942,7 +942,11 @@
       <path d="M12 19V5" />
     </svg>
   </button>
-
+<script>
+window.onerror = function(msg, src, line, col, err) {
+  alert("JS Error:\n" + msg + "\nLine: " + line);
+};
+</script>
   <script src="/js/script.js"></script>
 </body>
 
