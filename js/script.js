@@ -101,16 +101,13 @@
   window.addEventListener("scroll", updateScrollProgress);
 
   // ============================================
-  // CURSOR GLOW (non-touch only)
+  // CURSOR GLOW (removed)
   // ============================================
+  // Keep a reference named `cursorGlow` to avoid changing other code that may
+  // reference this variable elsewhere. Do not attach listeners or mutate
+  // layout. If the element exists, hide it safely.
   const cursorGlow = document.getElementById("cursorGlow");
-
-  if (window.matchMedia("(pointer: fine)").matches) {
-    document.addEventListener("mousemove", function (e) {
-      cursorGlow.style.left = e.clientX + "px";
-      cursorGlow.style.top = e.clientY + "px";
-    });
-  } else {
+  if (cursorGlow && cursorGlow.style) {
     cursorGlow.style.display = "none";
   }
 
